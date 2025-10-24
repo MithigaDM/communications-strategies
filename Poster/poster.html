@@ -112,6 +112,47 @@
             border-radius: 5px;
             border-left: 5px solid #ffc107;
         }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .poster {
+                padding: 15px;
+                max-width: 100%;
+            }
+            .header {
+                padding: 15px;
+            }
+            .title {
+                font-size: 2em;
+            }
+            .team {
+                font-size: 1.2em;
+            }
+            .section {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+            .section h2 {
+                font-size: 1.5em;
+            }
+            .visual {
+                padding: 10px;
+            }
+            .bar, .bar-target {
+                width: 150px;
+            }
+            /* Stack grids on mobile */
+            [style*="grid-template-columns: 1fr 1fr 1fr"] {
+                grid-template-columns: 1fr !important;
+            }
+            [style*="grid-template-columns: repeat(3, 1fr)"] {
+                grid-template-columns: 1fr !important;
+            }
+            [style*="grid-template-columns: 1fr 1fr"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
     </style>
 </head>
 <body>
