@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Poster</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .poster {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border: 1px solid #e9ecef;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #ff9900;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            background-color: #232f3e;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .title {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 0;
+        }
+        .team {
+            font-size: 1.5em;
+            color: #ff9900;
+            margin-top: 10px;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-left: 5px solid #ff9900;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        .section h2 {
+            color: #232f3e;
+            border-bottom: 2px solid #ff9900;
+            padding-bottom: 10px;
+            font-size: 1.8em;
+        }
+        .visual {
+            text-align: center;
+            margin: 20px 0;
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #bbdefb;
+        }
+        .visual p {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #1565c0;
+        }
+        .bar {
+            display: inline-block;
+            width: 200px;
+            height: 30px;
+            background-color: #ff6b6b;
+            margin: 0 10px;
+            border-radius: 5px;
+            position: relative;
+            vertical-align: middle;
+        }
+        .bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: #4caf50;
+            width: 52%;
+            border-radius: 5px;
+        }
+        .bar-target {
+            display: inline-block;
+            width: 200px;
+            height: 30px;
+            background-color: #4caf50;
+            margin: 0 10px;
+            border-radius: 5px;
+            vertical-align: middle;
+        }
+        .story {
+            font-style: italic;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+        .references {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 10px;
+            border-radius: 5px;
+            border-left: 5px solid #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <div class="poster">
+        <div class="header">
+            <div class="title">Driving GenAI Adoption at AWS: My Value as a Solutions Architect</div>
+            <div class="team">David Mathea Mithiga Adm: 034915</div>
+            <div class="team">Strathmore University, Msc. Data Science and Analytics</div>
+        </div>
+
+        <div class="section">
+            <h2>The Challenge</h2>
+            <p class="story">Enterprises are excited about GenAI, but many fail to scale. Only 26% achieve success. Drawing from my Nokia experience, I see parallels in tech adoption. At AWS, I'll use data to solve this.</p>
+            <div class="highlight">
+                <strong>Objectives:</strong> Identify barriers, quantify impacts, propose solutions.<br>
+                <strong>Data Sources:</strong> McKinsey AI Reports, Deloitte Surveys, AWS Analytics.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Key Challenges in GenAI Adoption</h2>
+            <p>While GenAI shows promise, enterprises face several interrelated barriers to widespread success and profitability:</p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: auto; gap: 20px; background: #e3f2fd; padding: 20px; border-radius: 10px;">
+                <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <h3 style="color: #f44336;">Strategic Barriers</h3>
+                    <ul style="font-size: 0.8em; padding-left: 20px;">
+                        <li><strong>Unclear Use Cases:</strong> Adoption due to trends, not defined problems; leads to pilot purgatory.</li>
+                        <li><strong>Data Quality Issues:</strong> Siloed, unstructured data causes hallucinations and reduced trust.</li>
+                        <li><strong>High Costs:</strong> Expensive compute and hidden costs; uncertain ROI for some apps.</li>
+                    </ul>
+                </div>
+                <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <h3 style="color: #ff9800;">Operational Barriers</h3>
+                    <ul style="font-size: 0.8em; padding-left: 20px;">
+                        <li><strong>Security Risks:</strong> Data leakage in APIs; lack of governance and IP uncertainties.</li>
+                        <li><strong>Talent Gaps:</strong> Shortage of skilled professionals; employee resistance and rigid processes.</li>
+                        <li><strong>Immature Tooling:</strong> Probabilistic outputs hard to measure; evolving MLOps.</li>
+                    </ul>
+                </div>
+                <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <h3 style="color: #4caf50;">Technology Barriers</h3>
+                    <ul style="font-size: 0.8em; padding-left: 20px;">
+                        <li><strong>Vendor Fragmentation:</strong> Rapid changes create integration risks; choices between models and deployments.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Pathways to Success</h2>
+            <p>Successful enterprises focus on strategic implementation:</p>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: auto auto; gap: 20px; background: #e3f2fd; padding: 20px; border-radius: 10px;">
+                <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+                    <div style="font-size: 2em;">🎯</div>
+                    <h3 style="color: #4caf50;">Narrow Use Cases</h3>
+                    <p style="font-size: 0.8em;">Start with high-impact applications like customer support summarization or code generation.</p>
+                </div>
+                <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+                    <div style="font-size: 2em;">📊</div>
+                    <h3 style="color: #4caf50;">Data Readiness</h3>
+                    <p style="font-size: 0.8em;">Invest in RAG for accurate, domain-specific outputs from trusted sources.</p>
+                </div>
+                <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+                    <div style="font-size: 2em;">👥</div>
+                    <h3 style="color: #4caf50;">Cross-Functional Teams</h3>
+                    <p style="font-size: 0.8em;">Build teams with legal, security, domain experts, and engineers early.</p>
+                </div>
+                <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+                    <div style="font-size: 2em;">🤖</div>
+                    <h3 style="color: #4caf50;">Human-in-the-Loop</h3>
+                    <p style="font-size: 0.8em;">Treat GenAI as a co-pilot with validation workflows for reliability.</p>
+                </div>
+                <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+                    <div style="font-size: 2em;">📈</div>
+                    <h3 style="color: #4caf50;">Measure KPIs</h3>
+                    <p style="font-size: 0.8em;">Track operational metrics like time saved and error reduction.</p>
+                </div>
+            </div>
+            <p>In short, GenAI's value emerges with clear strategy, robust data, and organizational change, leading to profitability.</p>
+        </div>
+
+        <div class="section">
+            <h2>My Approach</h2>
+            <p>Aligned with proven pathways to GenAI success, my approach as an AWS Solutions Architect addresses the core problem of low GenAI success rates (only 26%, with barriers like skill gaps at 55%, costs at 48%, and risks at 44%) through strategic, iterative implementation:</p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: auto; gap: 20px; background: #e3f2fd; padding: 20px; border-radius: 10px;">
+                <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <h3 style="color: #f44336;">The Problem</h3>
+                    <p style="font-size: 0.9em;">Low GenAI Success Rate</p>
+                    <div style="display: flex; align-items: center;">
+                        <div style="width: 100px; height: 20px; background: #ff6b6b; border-radius: 5px; position: relative;">
+                            <div style="height: 100%; background: #f44336; width: 26%; border-radius: 5px;"></div>
+                            <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-weight: bold; font-size: 0.8em;">26%</span>
+                        </div>
+                        <span style="margin-left: 10px; font-size: 0.9em;">Success Rate</span>
+                    </div>
+                    <p style="font-size: 0.8em;">Barriers: Skill gaps (55%), costs (48%), risks (44%). Addressed in assessment of high-impact use cases.</p>
+                </div>
+                <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <h3 style="color: #ff9800;">Planned Solutions</h3>
+                    <p style="font-size: 0.9em;">My Actions as Architect</p>
+                    <ul style="font-size: 0.8em; padding-left: 20px;">
+                        <li>Assess Use Cases: Identify high-value applications</li>
+                        <li>Data Readiness: Use AWS Glue and RAG</li>
+                        <li>Build Teams: Collaborate cross-functionally</li>
+                        <li>Human-in-the-Loop: Model with SageMaker</li>
+                    </ul>
+                    <div style="display: flex; align-items: center;">
+                        <div style="width: 100px; height: 20px; background: #ff9800; border-radius: 5px; position: relative;">
+                            <div style="height: 100%; background: #4caf50; width: 100%; border-radius: 5px;"></div>
+                            <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-weight: bold; font-size: 0.8em;">100%</span>
+                        </div>
+                        <span style="margin-left: 10px; font-size: 0.9em;">Action Plan</span>
+                    </div>
+                </div>
+                <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <h3 style="color: #4caf50;">Expected Outcomes</h3>
+                    <p style="font-size: 0.9em;">Improved Adoption</p>
+                    <div style="display: flex; align-items: center;">
+                        <div style="width: 100px; height: 20px; background: #ff6b6b; border-radius: 5px; position: relative;">
+                            <div style="height: 100%; background: #4caf50; width: 50%; border-radius: 5px;"></div>
+                            <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-weight: bold; font-size: 0.8em;">50%+</span>
+                        </div>
+                        <span style="margin-left: 10px; font-size: 0.9em;">Target Success</span>
+                    </div>
+                    <p style="font-size: 0.8em;">Double success, reduce time by 30%, mitigate risks.</p>
+                </div>
+            </div>
+            <p>This integrated approach ensures scalable, profitable GenAI adoption by focusing on strategy, data, and collaboration.</p>
+        </div>
+
+
+        <div class="section">
+            <h2>Why Me?</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div>
+                    <h3 style="color: #232f3e;">Leadership & Experience</h3>
+                    <ul style="font-size: 0.9em;">
+                        <li>11+ years in telecom as Radio Solutions Manager at Nokia</li>
+                        <li>Managed teams: NOC (32 engineers), Field Operations (11 engineers)</li>
+                        <li>Closed deals worth 100M+ USD in network expansions</li>
+                        <li>Technical pre-sales, translating requirements to solutions</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="color: #232f3e;">Technical Skills</h3>
+                    <ul style="font-size: 0.9em;">
+                        <li>Programming: Python, C++, PHP, Excel VBA</li>
+                        <li>Automation & Data Analysis: Created tools for efficiency</li>
+                        <li>Network Optimization: Improved availability to 98.5%</li>
+                        <li>Innovation: Built OSS scripts, alarm management apps</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="story">With my proven track record in leadership, technical expertise, and data-driven solutions, I'm the ideal candidate to drive GenAI adoption at AWS, bridging gaps and delivering value.</p>
+        </div>
+
+        <div class="section">
+            <h2>References</h2>
+            <div class="references">
+                <p>McKinsey State of AI Report 2024</p>
+                <p>Deloitte State of Generative AI in Enterprise</p>
+                <p>AWS Customer Case Studies</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
